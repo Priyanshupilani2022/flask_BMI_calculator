@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flask page</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>Calculate Your BMI</h1>
+    <div class="main">
+        <form class="head" method="POST" action="/">
+        <input type="number" name="weight" placeholder="Enter Your weight in kg"><br>
+        <input type="number" name="height" placeholder="Enter Your height in meters"><br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+        <br>
+    <div class="bottom">
+        {% if weight and height %}
+            <p>Your weight: {{weight}}</p>
+            <p>Your height: {{height}}</p>
+        {% endif %}
+
+        {%if bmi%}
+            <p>Your BMI Index: {{bmi}}</p>
+        {% endif %}
+
+        
+    </div>
+    
+</body>
+</html>

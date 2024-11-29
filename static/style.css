@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(237, 232, 226);
+    text-align: center;
+}
+
+.main .head{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.bottom{ 
+    margin-top: 20px;
+
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
